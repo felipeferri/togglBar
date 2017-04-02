@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>userAgent</key>
+	<string>felipe.ferri@gmail.com</string>
+	<key>togglApiToken</key>
+	<string>ea807b2901b7ef0b225d9c594da02909</string>
+	<key>hourlyRate</key>
+	<integer>75</integer>
+	<key>currency</key>
+	<string>R$</string>
+	<key>workspaceIndex</key>
+	<integer>0</integer>
+</dict>
+</plist>
