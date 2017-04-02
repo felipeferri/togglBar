@@ -5,8 +5,10 @@ You have to configure your user parameters in the config.plist file. If you are 
 
 There you set the following information:
 
-userAgent: your e-mail. This is asked by Toggle as a way to contact you if you are using the api in a way you shouldn'.
-togglApiToken: you can obtain this token in your Profile settings in your Toggl account. It is an alphanumeric number of the form ea807c3211b7efAf3329c594da02909
-hourlyRate: how much you earn by work hour.
-currency: the currency symbol that should be displayed along your weekly earnings.
-workspaceIndex: if you have several workspaces on Toggl, use this index to select which one you wish to display. 0 is the first, and the default value.
+Parameter|Description
+---------|-----------
+userAgent|Your e-mail. This is asked by Toggle as a way to contact you if you are using the api in a way you shouldn'.
+togglApiToken|You can obtain this token in your Profile settings in your Toggl account. It is an alphanumeric number of the form ea807c3211b7efAf3329c594da02909
+hourlyRate|How much you earn by work hour.
+currency|The currency symbol that should be displayed along your weekly earnings.
+workspaceIndex|If you have several workspaces on Toggl, use this index to select which one you wish to display. 0 is the first, and the default value.
