@@ -1,6 +1,6 @@
 //
-//  SalemovingError.swift
-//  SaleMoving
+//  TogglError.swift
+//  TogglBar
 //
 //  Created by Felipe Ferri on 25/11/16.
 //  Copyright © 2016 Felipe Augusto Sviaghin Ferri. All rights reserved.
@@ -8,15 +8,14 @@
 
 import Foundation
 
-let SalemovingErrorDomain = "com.sailscooter.salemoving"
+let TogglErrorDomain = "com.sailscooter.togglbar"
 
-struct SalemovingError {
-    static let InvalidUsernamePassword = SalemovingError.error(1, localizedDescription: "Invalid username or password")
-    static let IpAddressNotSet = SalemovingError.error(7, localizedDescription: "Please set an ip address for the server")
-    static let InvalidWishRef = SalemovingError.error(8, localizedDescription: "Received invalid wishref when creating new wish")
+struct TogglError {
+    static let totalGrandNotFound = TogglError.error(1, localizedDescription: "Total Grand was not returned in the summary report.")
+    static let workspacesNotReturned = TogglError.error(1, localizedDescription: "The workspaces array wasn't returned by the api")
     
     static func error(_ code: Int, localizedDescription: String) -> NSError {
-        let error = NSError(domain: SalemovingErrorDomain, code: code, userInfo: [kCFErrorLocalizedDescriptionKey as AnyHashable: localizedDescription])
+        let error = NSError(domain: TogglErrorDomain, code: code, userInfo: [kCFErrorLocalizedDescriptionKey as AnyHashable: localizedDescription])
         return error
     }
 }

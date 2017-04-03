@@ -7,17 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023CC51CF4D227C4154ACAFA /* Pods_TogglBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFC95E82A43C90CE65F757E /* Pods_TogglBar.framework */; };
+		5580474C1E917A5200808BDB /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5580474B1E917A5200808BDB /* DataModel.swift */; };
+		5580474E1E91886E00808BDB /* config_felipe.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5580474D1E91886E00808BDB /* config_felipe.plist */; };
 		55D74BC41E90823600F38E0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D74BC31E90823600F38E0D /* AppDelegate.swift */; };
 		55D74BC61E90823600F38E0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55D74BC51E90823600F38E0D /* Assets.xcassets */; };
 		55D74BC91E90823600F38E0D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55D74BC71E90823600F38E0D /* MainMenu.xib */; };
+		55D74BD11E9086A100F38E0D /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D74BD01E9086A100F38E0D /* StatusMenuController.swift */; };
+		55D74BD41E90926800F38E0D /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D74BD31E90926800F38E0D /* Database.swift */; };
+		55D74BD61E90962E00F38E0D /* BusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D74BD51E90962E00F38E0D /* BusinessModel.swift */; };
+		55D74BD91E9098FD00F38E0D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D74BD81E9098FD00F38E0D /* Extensions.swift */; };
+		55D74BDB1E9099FC00F38E0D /* TogglError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D74BDA1E9099FC00F38E0D /* TogglError.swift */; };
+		55D74BE11E9160A100F38E0D /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55D74BE01E9160A000F38E0D /* config.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5580474B1E917A5200808BDB /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		5580474D1E91886E00808BDB /* config_felipe.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config_felipe.plist; sourceTree = "<group>"; };
 		55D74BC01E90823600F38E0D /* TogglBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TogglBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55D74BC31E90823600F38E0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55D74BC51E90823600F38E0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55D74BC81E90823600F38E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		55D74BCA1E90823600F38E0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55D74BD01E9086A100F38E0D /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		55D74BD31E90926800F38E0D /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		55D74BD51E90962E00F38E0D /* BusinessModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessModel.swift; sourceTree = "<group>"; };
+		55D74BD81E9098FD00F38E0D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		55D74BDA1E9099FC00F38E0D /* TogglError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TogglError.swift; sourceTree = "<group>"; };
+		55D74BE01E9160A000F38E0D /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		74C6114CD20986920FED9405 /* Pods-TogglBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TogglBar.release.xcconfig"; path = "Pods/Target Support Files/Pods-TogglBar/Pods-TogglBar.release.xcconfig"; sourceTree = "<group>"; };
+		D83B8C51224712908CA382BB /* Pods-TogglBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TogglBar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TogglBar/Pods-TogglBar.debug.xcconfig"; sourceTree = "<group>"; };
+		DAFC95E82A43C90CE65F757E /* Pods_TogglBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TogglBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				023CC51CF4D227C4154ACAFA /* Pods_TogglBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +57,8 @@
 			children = (
 				55D74BC21E90823600F38E0D /* TogglBar */,
 				55D74BC11E90823600F38E0D /* Products */,
+				C0FD0E76E84444414930D1DE /* Pods */,
+				F39C26DB99518F2DD9F29495 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,12 +73,53 @@
 		55D74BC21E90823600F38E0D /* TogglBar */ = {
 			isa = PBXGroup;
 			children = (
+				55D74BD71E9098E600F38E0D /* Custom */,
+				55D74BD21E90925600F38E0D /* Model */,
 				55D74BC31E90823600F38E0D /* AppDelegate.swift */,
 				55D74BC51E90823600F38E0D /* Assets.xcassets */,
 				55D74BC71E90823600F38E0D /* MainMenu.xib */,
 				55D74BCA1E90823600F38E0D /* Info.plist */,
+				55D74BD01E9086A100F38E0D /* StatusMenuController.swift */,
+				5580474D1E91886E00808BDB /* config_felipe.plist */,
+				55D74BE01E9160A000F38E0D /* config.plist */,
 			);
 			path = TogglBar;
+			sourceTree = "<group>";
+		};
+		55D74BD21E90925600F38E0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				55D74BD31E90926800F38E0D /* Database.swift */,
+				55D74BD51E90962E00F38E0D /* BusinessModel.swift */,
+				5580474B1E917A5200808BDB /* DataModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		55D74BD71E9098E600F38E0D /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				55D74BDA1E9099FC00F38E0D /* TogglError.swift */,
+				55D74BD81E9098FD00F38E0D /* Extensions.swift */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		C0FD0E76E84444414930D1DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D83B8C51224712908CA382BB /* Pods-TogglBar.debug.xcconfig */,
+				74C6114CD20986920FED9405 /* Pods-TogglBar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F39C26DB99518F2DD9F29495 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAFC95E82A43C90CE65F757E /* Pods_TogglBar.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,9 +129,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55D74BCD1E90823600F38E0D /* Build configuration list for PBXNativeTarget "TogglBar" */;
 			buildPhases = (
+				BA0BBEAC116705FC84EE4935 /* [CP] Check Pods Manifest.lock */,
 				55D74BBC1E90823600F38E0D /* Sources */,
 				55D74BBD1E90823600F38E0D /* Frameworks */,
 				55D74BBE1E90823600F38E0D /* Resources */,
+				83BECB02AEB368BFBEF6425E /* [CP] Embed Pods Frameworks */,
+				C5C96502C102C6A3A8313ABA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -118,19 +185,75 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55D74BE11E9160A100F38E0D /* config.plist in Resources */,
 				55D74BC61E90823600F38E0D /* Assets.xcassets in Resources */,
 				55D74BC91E90823600F38E0D /* MainMenu.xib in Resources */,
+				5580474E1E91886E00808BDB /* config_felipe.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		83BECB02AEB368BFBEF6425E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TogglBar/Pods-TogglBar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA0BBEAC116705FC84EE4935 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C5C96502C102C6A3A8313ABA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TogglBar/Pods-TogglBar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		55D74BBC1E90823600F38E0D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5580474C1E917A5200808BDB /* DataModel.swift in Sources */,
+				55D74BD91E9098FD00F38E0D /* Extensions.swift in Sources */,
+				55D74BD41E90926800F38E0D /* Database.swift in Sources */,
+				55D74BD11E9086A100F38E0D /* StatusMenuController.swift in Sources */,
 				55D74BC41E90823600F38E0D /* AppDelegate.swift in Sources */,
+				55D74BD61E90962E00F38E0D /* BusinessModel.swift in Sources */,
+				55D74BDB1E9099FC00F38E0D /* TogglError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +363,7 @@
 		};
 		55D74BCE1E90823600F38E0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D83B8C51224712908CA382BB /* Pods-TogglBar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -254,6 +378,7 @@
 		};
 		55D74BCF1E90823600F38E0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74C6114CD20986920FED9405 /* Pods-TogglBar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -285,6 +410,7 @@
 				55D74BCF1E90823600F38E0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

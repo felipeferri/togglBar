@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   config.plist
-   TogglBar
-
-   Created by Felipe Augusto Sviaghin Ferri on 2/4/17.
-   Copyright (c) 2017 Felipe Augusto Sviaghin Ferri. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+<dict>
+	<key>userAgent</key>
+	<string>your-email@gmail.com</string>
+	<key>togglApiToken</key>
+	<string>your_api_token_from_toggl</string>
+	<key>hourlyRate</key>
+	<integer>75</integer>
+	<key>currency</key>
+	<string>R$</string>
+	<key>workspaceIndex</key>
+	<integer>0</integer>
+</dict>
 </plist>

@@ -5,78 +5,7 @@
 //  Created by Felipe Augusto Sviaghin Ferri on 5/17/16.
 //  Copyright © 2016 Felipe Augusto Sviaghin Ferri. All rights reserved.
 //
-
-import UIKit
-
-
-extension UIViewController {
-    var buyerbm: SaleMovingBuyerBusinessModel {
-        return SaleMovingBuyerBusinessModel.sharedInstance
-    }
-    
-    var sellerbm: SaleMovingSellerBusinessModel {
-        return SaleMovingSellerBusinessModel.sharedInstance
-    }
-    
-    var bm: BusinessModel {
-        return BusinessModel.sharedInstance
-    }
-    
-    var sellermvp: BusinessModelMVP {
-        return BusinessModelMVP.sharedInstance
-    }
-    
-    func present(_ error: Error) {
-        let alertController = UIAlertController(title: "Erro", message: (error as NSError).localizedDescription, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
-        alertController.addAction(okAction)
-        present(alertController, animated: true, completion: nil)
-    }
-}
-
-extension UIView {
-    func addSubviewWithConstraints(_ subView: UIView) {
-        subView.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(subView)
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "|[subView]|", options: [], metrics: nil, views: ["subView":subView]))
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[subView]|", options: [], metrics: nil, views: ["subView":subView]))
-        layoutIfNeeded()
-        subView.frame = bounds
-    }
-    
-    @IBInspectable var cornerRadius: CGFloat {
-        get {
-            return layer.cornerRadius
-        }
-        set {
-            layer.cornerRadius = newValue
-            layer.masksToBounds = newValue > 0
-        }
-    }
-    
-    @IBInspectable var borderColor: UIColor? {
-        get {
-            if let color = layer.borderColor {
-                return UIColor(cgColor: color)
-            }
-            return nil
-        }
-        
-        set {
-            layer.borderColor = borderColor?.cgColor
-        }
-    }
-    
-    @IBInspectable var borderWidth: CGFloat {
-        get {
-            return layer.borderWidth
-        }
-        
-        set {
-            layer.borderWidth = borderWidth
-        }
-    }
-}
+import Cocoa
 
 extension NumberFormatter {
     class func decimalFromFloat(_ float: Float) -> String {
@@ -138,7 +67,7 @@ extension String {
     
     var asDate: Date? {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+        dateFormatter.dateFormat = "yyyy-MM-dd"
         return dateFormatter.date(from: self)
     }
     
@@ -171,20 +100,6 @@ extension String {
     }
 }
 
-extension UIColor {
-    convenience init(red: Int, green: Int, blue: Int) {
-        assert(red >= 0 && red <= 255, "Invalid red component")
-        assert(green >= 0 && green <= 255, "Invalid green component")
-        assert(blue >= 0 && blue <= 255, "Invalid blue component")
-        
-        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
-    }
-    
-    convenience init(netHex:Int) {
-        self.init(red:(netHex >> 16) & 0xff, green:(netHex >> 8) & 0xff, blue:netHex & 0xff)
-    }
-}
-
 extension Date {
     var dateString: String {
         let dateFormatter = DateFormatter()
@@ -207,10 +122,20 @@ extension Date {
         return dateFormatter.string(from: self)
     }
     
-    var databaseString: String {
+    var queryString: String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss zzz"
+        dateFormatter.dateFormat = "yyyy-MM-dd"
         return dateFormatter.string(from: self)
+    }
+    
+    var startOfWeek: Date {
+        let date = Calendar.current.date(from: Calendar.current.dateComponents([.yearForWeekOfYear, .weekOfYear], from: self))!
+        let dslTimeOffset = NSTimeZone.local.daylightSavingTimeOffset(for: date)
+        return date.addingTimeInterval(dslTimeOffset)
+    }
+    
+    var endOfWeek: Date {
+        return Calendar.current.date(byAdding: .second, value: 604799, to: self.startOfWeek)!
     }
     
     /// SwiftRandom extension
