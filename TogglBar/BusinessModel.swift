@@ -58,6 +58,8 @@ class BusinessModel {
                     let workspace = workspaces[self.workspaceIndex]
                     if let workspaceId = workspace.id {
                         print ("Got workspace id: \(workspaceId)")
+                        print ("Start of week: \(Date().startOfWeek)")
+                        print ("End of week: \(Date().endOfWeek)")
                         self.startUpdatingAccumulatedTime(sinceDate: Date().startOfWeek, untilDate: Date().endOfWeek, workspaceId: workspaceId)
                     }
                 })

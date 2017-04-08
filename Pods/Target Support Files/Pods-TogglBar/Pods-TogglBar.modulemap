@@ -1,0 +1,6 @@
+framework module Pods_TogglBar {
+  umbrella header "Pods-TogglBar-umbrella.h"
+
+  export *
+  module * { export * }
+}

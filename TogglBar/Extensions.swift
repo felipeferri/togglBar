@@ -129,13 +129,16 @@ extension Date {
     }
     
     var startOfWeek: Date {
-        let date = Calendar.current.date(from: Calendar.current.dateComponents([.yearForWeekOfYear, .weekOfYear], from: self))!
+        var date = Calendar.current.date(from: Calendar.current.dateComponents([.yearForWeekOfYear, .weekOfYear], from: self))!
         let dslTimeOffset = NSTimeZone.local.daylightSavingTimeOffset(for: date)
+        
+        date = Calendar.current.date(byAdding: .day, value: 1, to: date)!
+        
         return date.addingTimeInterval(dslTimeOffset)
     }
     
     var endOfWeek: Date {
-        return Calendar.current.date(byAdding: .second, value: 604799, to: self.startOfWeek)!
+        return Calendar.current.date(byAdding: .day, value: 6, to: self.startOfWeek)!
     }
     
     /// SwiftRandom extension
