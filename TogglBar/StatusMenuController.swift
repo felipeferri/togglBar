@@ -37,6 +37,7 @@ extension StatusMenuController: BusinessModelDelegate {
         nf.currencySymbol = bm.currency
         nf.numberStyle = .currency
         if let hourlyRate = bm.hourlyRate {
+            nf.maximumFractionDigits = 0
             let earned = nf.string(from: NSNumber(value: hourlyRate*Double(totalMilliseconds)/(3600*1000.0)))
             statusItem.title = earned
         } else {
